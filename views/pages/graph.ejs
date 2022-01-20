@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+ 
+</head>
+ <style>
+      table {
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        padding: 10px;
+        border-bottom: 2px solid #8ebf42;
+        text-align: center;
+      }
+    </style>
+<body class="container">
+
+
+
+<main>
+  <div class="jumbotron">
+    <h1>Subgraphs</h1>
+    <p>Transfer Data</p>
+
+    <table class="table table-striped" >
+      <thead>
+      <tr>
+      <th>Token Id</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Transaction Hash</th>
+
+      </tr>
+      </thead>
+      <tbody>
+      <% data.forEach(function(entry) {%>
+      <tr>
+      <td><%=entry.tokenId%></td>
+      <td><%=entry.from%></td>
+      <td><%=entry.to%></td>
+      <td><%=entry.tx%></td>
+      </tr>
+      <%});%>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+
+</body>
+</html>
