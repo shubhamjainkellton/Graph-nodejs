@@ -8,7 +8,7 @@ const axios = require('axios')
 app.set('view engine', 'ejs');
 
 const apiCall = async(req,res)=>{
-    const response = await axios.post(`https://api.studio.thegraph.com/query/18798/test-graph/v0.0.1`
+    const response = await axios.post(`https://api.studio.thegraph.com/query/18798/tycho-graph/0.0.2`
     ,
     {
         query:`{
